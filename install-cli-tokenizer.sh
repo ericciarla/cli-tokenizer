@@ -4,10 +4,10 @@
 mkdir -p ~/bin
 
 # Download the Python script
-curl -L https://raw.githubusercontent.com/yourusername/tiktoken-shell/main/tiktoken-counter.py -o ~/bin/tiktoken-counter.py
+curl -L https://raw.githubusercontent.com/ericciarla/cli-tokenizer/main/tiktoken-counter.py -o ~/bin/tiktoken-counter.py
 
 # Download the shell wrapper
-curl -L https://raw.githubusercontent.com/yourusername/tiktoken-shell/main/tokens -o ~/bin/tokens
+curl -L https://raw.githubusercontent.com/ericciarla/cli-tokenizer/main/tokens -o ~/bin/tokens
 
 # Make the shell wrapper executable
 chmod +x ~/bin/tokens
