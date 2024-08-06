@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# Check if Python and pip are installed
+if ! command -v python3 &> /dev/null || ! command -v pip3 &> /dev/null
+then
+    echo "Python3 and pip3 are required but not installed. Please install them and try again."
+    exit 1
+fi
+
+# Check if tiktoken is installed, if not, install it
+if ! python3 -c "import tiktoken" &> /dev/null
+then
+    echo "Installing tiktoken..."
+    pip3 install tiktoken
+fi
+
+# Get the directory of this script
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+# Run the Python script with all arguments passed to this shell script
+python3 "$DIR/tiktoken-counter.py" "$@"
