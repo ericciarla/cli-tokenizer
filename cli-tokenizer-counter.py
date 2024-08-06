@@ -8,7 +8,7 @@ def count_tokens(text):
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
-        print("Usage: tiktoken-counter.py <text>")
+        print("Usage: cli-tokenizer-counter.py <text>")
         sys.exit(1)
     
     text = " ".join(sys.argv[1:])

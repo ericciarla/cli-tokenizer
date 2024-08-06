@@ -4,7 +4,7 @@
 mkdir -p ~/bin
 
 # Download the Python script
-curl -L https://raw.githubusercontent.com/ericciarla/cli-tokenizer/main/tiktoken-counter.py -o ~/bin/tiktoken-counter.py
+curl -L https://raw.githubusercontent.com/ericciarla/cli-tokenizer/main/cli-tokenizer-counter.py -o ~/bin/cli-tokenizer-counter.py
 
 # Download the shell wrapper
 curl -L https://raw.githubusercontent.com/ericciarla/cli-tokenizer/main/tokens -o ~/bin/tokens

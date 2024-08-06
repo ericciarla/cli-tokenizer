@@ -18,4 +18,4 @@ fi
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 # Run the Python script with all arguments passed to this shell script
-python3 "$DIR/tiktoken-counter.py" "$@"
+python3 "$DIR/cli-tokenizer-counter.py" "$@"
